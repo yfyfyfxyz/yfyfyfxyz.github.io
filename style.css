@@ -10,7 +10,7 @@ body, html {
     background-image: url("deamons.png");;
 
     /* Full height */
-    height: 100%; 
+    width: 100%; 
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -23,7 +23,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; /* Font color is white */
-    font-size: 24px;
+    font-size: 200px;
     text-align: center;
     font-family: sans-serif; /* Font type is sans-serif */
 }
