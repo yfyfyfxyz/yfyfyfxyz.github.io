@@ -1,0 +1,29 @@
+
+/* External CSS file */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    /* The image used */
+    background-image: url('YOUR_IMAGE_URL');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Font color is white */
+    font-size: 24px;
+    text-align: center;
+    font-family: sans-serif; /* Font type is sans-serif */
+}
