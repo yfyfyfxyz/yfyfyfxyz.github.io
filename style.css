@@ -31,6 +31,11 @@ body, html {
     object-fit: contain;
 }
 
+a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Optional: Makes the link color the same as the parent element */
+}
+
 .content-wrapper {
 	   margin: 0 auto;
     text-align: center;
