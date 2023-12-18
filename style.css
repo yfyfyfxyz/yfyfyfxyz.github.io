@@ -1,26 +1,82 @@
-
-/* External CSS file */
-
 body, html {
-    height: 100%;
     margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
-.bg {
-    /* The image used */
-    background-image: url("deamonlogo.jpg");
-	height: 100%;
-    /* Center and scale the image nicely */
+
+.full-image-bg {
+    background-image: url('deamons.png'); /* Replace with your image */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover; /* Adjust as needed */
+    min-height: 100%; /* Ensures full height coverage */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	 position: relative;
+    height: 100vh; /* Ensure it takes the full viewport height */
 }
-.centered {
+
+
+.full-screen-gif {
+    max-height: 65vh;
+    max-width: 65vw;
+   width: auto; /* Auto adjust width */
+    height: auto; /* Auto adjust height */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Font color is white */
-    font-size: 200px;
-    text-align: center;
-    font-family: sans-serif; /* Font type is sans-serif */
+    object-fit: contain;
 }
+
+.content-wrapper {
+	   margin: 0 auto;
+    text-align: center;
+    width: 80%; /* Adjust as needed */
+    max-width: 1200px; /* Optional, for larger screens */
+	    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    /* Add additional styling for headings as needed */
+	    font-weight: normal; 
+}
+
+.centered-text {
+   /* position: absolute; */
+   margin: 0 auto;
+    width: 50%;
+    color: white;
+    text-align: center;
+	background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.three-columns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+    color: white;
+    text-align: center;
+	background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .three-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 80%;
+    }
+}
+
